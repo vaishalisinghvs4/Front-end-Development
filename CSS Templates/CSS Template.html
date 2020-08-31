@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>CSS Template</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		* {
+			box-sizing:border-box;
+		}
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		header {
+			background-color: #666;
+			padding: 30px;
+			text-align:center;
+			font-size: 35px;
+			color: black;
+		}
+		nav{
+			float:left;
+			width:30%;
+			height: 300px;
+			background: #cc;
+			padding: 20px;
+		}
+		nav ul{
+			list-style-type: none;
+			padding:0;
+		}
+		article {
+			float:left;
+			padding: 20px;
+			width: 70%;
+			background-color: #f1f1f1;
+			height: 300px;
+		}
+		section:after {
+  			content: "";
+  			display: table;
+  			clear: both;
+		}
+		footer {
+  			background-color: #777;
+  			padding: 10px;
+  			text-align: center;
+  			color: white;
+		}
+		/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+		@media (max-width: 600px) {
+  			nav, article {
+    			width: 100%;
+    			height: auto;
+  			}
+		}
+	</style>
+</head>
+<body>
+	<h2>CSS Layout Float</h2>
+	<header>
+		<h2 style="font-size:10vw">CITIES</h2>
+	</header>
+	<section>
+		<nav>
+			<ul>
+				<li><a href="#">Jaipur</a></li>
+				<li><a href="#">Kasol</a></li>
+				<li><a href="#">Bangalore</a></li>
+			</ul>
+		</nav>
+		<article>
+			<h2>Kasol</h2>
+			<!-- <iframe width="420" height="100" src="https://www.youtube.com/embed/watch?v=eM4PxNS4vhA"></iframe> -- >
+			<p>Kasol is a hamlet in the district Kullu of the Indian state of Himachal Pradesh. It is situated in Parvati Valley, on the banks of the Parvati River, on the way between Bhuntar and Manikaran.</p>
+		</article>
+	</section>
+	<footer>
+		<p>Thanks for visiting.</p>
+	</footer>
+</body>
+</html>

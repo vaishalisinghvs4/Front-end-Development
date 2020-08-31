@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>CSS Template 1</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		.header{
+			background-color:#f1f1f1;
+			padding:30px;
+			text-align: center;
+			font-size: 40px;
+		}
+		.row{
+			display: flex;
+		}
+		.column{
+			flex:1;
+			padding:10px;
+			height: 300px;
+		}
+		.footer{
+			background-color: #f1f1f1;
+			padding: 10px;
+			text-align: center;
+		}
+		@media screen and (max-width:600px){
+			.row{
+				flex-direction: column;
+			}
+		}
+	</style>
+</head>
+<body>
+	<h2>CSS template using Flex</h2>
+	<p>In this template, I have created a header, three equal columns and a footer.</p>
+	<p>Resize the browser to see the responsive effect.</p>
+	<div class="header">
+		<h2>Header</h2>
+	</div>
+	<div class="row">
+		<div class="column" style="background-color:#aaa">Column 1</div>
+		<div class="column" style="background-color:#bbb">Column 2</div>
+		<div class="column" style="background-color:#ccc">Column 3</div>
+	</div>
+	<div class="footer">
+		<h3>Footer</h3>
+	</div>
+</body>
+</html>
